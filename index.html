@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>Mueblería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
 
     <header>
-        <div class="headFondo">
-        <h1 id="tituloCentrado">WOOD INNOVATION</h1>
-        <h4 id="subtituloCentrado">Mueblería artesanal</h4>
+        <div class="header--fondo">
+        <h1 id="header__titulo--fuente">WOOD INNOVATION</h1>
+        <h4 id="header__subtitulo--fuente">Mueblería artesanal</h4>
         </div>
 
     
-        <nav>
+        <nav class="header__nav--formato">
           
-            <ul>
-                <div class="flexMenu">
-                <div><li><a href="contacto.html">Contacto</a></li></div>
-                <div><li><a href="galeria.html">Galería</a></li></div>
-                <div><li><a href="productos.html">Productos</a></li></div>
-                <div><li><a href="quienes_somos.html">Sobre nosotros</a></li></div>
-                <div><li><a href="registrate.html">Registrate</a></li></div>
-                </div>
-            </ul>
+            <button type="button" class="btn btn-primary"><a href="contacto.html">Contacto</a></button>
+            <button type="button" class="btn btn-primary"><a href="galeria.html">Galería</a></button>
+            <button type="button" class="btn btn-primary"><a href="productos.html">Productos</a></button>
+            <button type="button" class="btn btn-primary"><a href="quienes_somos.html">Sobre nosotros</a></button>
+            <button type="button" class="btn btn-primary"><a href="registrate.html">Registrate</a></button>
+
                 
         </nav>
 
@@ -42,39 +41,50 @@
     </header>
 
     <hr>
-    <br><br>
 
-    <div id="gridsBody">  
+    <div id="grid--formato">
 
-        <div id="foto1">
-            <img width="500" height="500" src="imagenes/juego_de_comedor.jpg" alt="Juego de comedor">
-        </div>
-        <div id="descr1">
-            <h2>Juego de comedor</h2>
-            <br><br>
-            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque explicabo iste temporibus expedita numquam ratione sapiente totam, praesentium perspiciatis mollitia. Illum harum delectus dolorem eum beatae nisi consequatur quasi exercitationem, laudantium ut atque laborum ad necessitatibus ipsa fugiat minus ratione? Maiores hic voluptatibus nostrum enim, ut, dolore obcaecati magnam officia quo repellat totam consectetur sit rem repellendus, rerum perspiciatis neque eos provident illo quos? Nihil sint vero voluptates officia, quo at aliquid exercitationem unde assumenda. Corrupti distinctio neque delectus officiis repellat debitis quod excepturi nam sint, eligendi maxime cupiditate provident dignissimos optio earum omnis voluptatum nesciunt, assumenda saepe hic dolorem quia harum tempora molestias. Laudantium illo iure explicabo facilis sequi, aspernatur quos quae cumque sunt cum deleniti id numquam incidunt, consectetur tempora veniam quasi? Illo cumque odit quidem quaerat omnis.</h4>
-        </div>
+            <div id="grid__fotos" class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                <div class="card">
+                    <img height="400px" src="imagenes/juego comedor.jpg" class="card-img-top" alt="juego de comedor">
+                    <div class="card-body">
+                    <h5 class="card-title">Juego de comedor</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quo et odit quidem possimus quaerat tempora libero ipsam officiis, quod hic veritatis error temporibus quibusdam non natus quis quae doloremque?</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <img height="400px" src="imagenes/juego jardin.jpg" class="card-img-top" alt=""juego de jardin>
+                    <div class="card-body">
+                    <h5 class="card-title">Juego de jardin</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam voluptatibus non consequatur maiores cumque quasi autem recusandae eum omnis, beatae possimus, tempora ea doloremque molestias ipsa incidunt laboriosam amet, expedita veritatis inventore rerum? Rerum, voluptas molestias!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <img height="400px" src="imagenes/juego de living.jpg" class="card-img-top" alt="juego de living">
+                    <div class="card-body">
+                    <h5 class="card-title">Juego de living</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa obcaecati sed itaque atque, optio, enim harum nam earum ducimus est ipsam excepturi accusamus unde. Sit, ex explicabo! Voluptate alias minus fuga sed possimus debitis id incidunt itaque, optio adipisci!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card">
+                    <img height="400px" src="imagenes/mesa tv.jpg" class="card-img-top" alt="mesa de tv">
+                    <div class="card-body">
+                    <h5 class="card-title">Rack para tv</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod, quis tenetur enim dolores iste laboriosam iusto ducimus eum cupiditate et facere sequi suscipit nulla totam, perferendis quasi. Natus commodi atque dolor inventore officia! Quod deserunt dolores corporis. Dolores mollitia quaerat quasi labore dicta reprehenderit esse quia earum tempore omnis.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
         
-        <div id="foto2">
-            <img width="500" height="500" src="imagenes/juego_de_jardin.jpg" alt="Juego de jardín">
-        </div>
-        <div id="descr2">
-            <h2>Juego de Jardin</h2>
-            <br><br>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi facilis nemo corporis suscipit voluptatem ad recusandae est distinctio. Culpa sed labore tempora similique quam maxime molestiae modi illo consequuntur! Vitae corrupti fugiat vero ipsa, excepturi labore dolor tempore sed omnis pariatur autem iusto voluptas odit magni optio velit hic quibusdam, fugit repellendus fuga, ea quia delectus natus. Quia, doloremque vel fugiat alias eaque cumque, odit atque natus quis eveniet eligendi quos quam cupiditate repudiandae! Eos eveniet necessitatibus nostrum voluptates ad. Tenetur quo rerum voluptas possimus magnam dolorum ad a neque, quisquam qui facilis dignissimos repudiandae, corrupti totam aliquid! Quae!</h4>
-        </div>
-
-        <div id="foto3">
-            <img width="500" height="500" src="imagenes/juego_de_living.jpg" alt="Juego de living">
-        </div>
-        <div id="descr3">
-            <h2>Juego de Living</h2>
-            <br><br>
-            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat beatae non nemo temporibus animi? Velit laudantium maxime esse rerum commodi praesentium hic temporibus magnam voluptatibus consequatur, culpa reiciendis facilis tempora asperiores in eos voluptas! Blanditiis accusantium tempore soluta asperiores, ratione, quas harum omnis voluptate esse saepe magnam nisi fuga hic obcaecati autem. Repudiandae distinctio assumenda nisi, atque dolores deleniti? Recusandae, adipisci praesentium atque dolor error rem! Accusantium atque maiores possimus assumenda ratione laborum quidem eaque aperiam qui asperiores unde doloremque neque sit fugiat reiciendis, dolorum modi quo dolor eos consectetur eveniet voluptate! Molestiae beatae accusamus natus quam aperiam, alias quae?</h4>
-        </div>
-
-        
-        <aside id="publicidad">
+        <aside id="grid__publicidad">
 
             <h3>Publicidad</h3>
             <br>
@@ -83,18 +93,16 @@
         </aside>
 
         
-        <div align="center" id="videoNosotros">
+        <div align="center" id="grid__videoNosotros">
             <iframe  width="700" height="400" src="https://www.youtube.com/embed/NYcR0DC3Gzo" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br>
             <h3>¿Quienes somos?</h3>
-            <br><br>
             <p>Una empresa familiar que hace 15 años se dedica a la fabricación de muebles de todo tipo, destacándonos por estar siempre a la vanguardia de la moda en diseño de interiores, manteniendo el compromiso con nuestros clientes desde el primer día.</p>
         
         </div>
 
 
-        <footer id="footerMedios">
-        <ul class="itemsFooter">
+        <footer id="grid__footer">
+        <ul class="grid__footer__lista--formato">
                 <li>Medios de contacto</li>
                 <li>Medios de pago</li>
 
@@ -104,6 +112,7 @@
 
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

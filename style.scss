@@ -1,0 +1,167 @@
+
+@import "contacto";
+@import "galeria";
+@import "productos";
+@import "quienes_somos";
+@import "registrate";
+$bgcolor: darkgoldenrod;
+$paddingForm: 30px;
+$sizeDescripcion: 10px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Staatliches', cursive;
+    background-color: grey
+
+}
+
+
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header */
+
+.header--fondo {
+    background-image: url(http://3.bp.blogspot.com/-BWxzdtVwawg/TywgA_9RW_I/AAAAAAAAC3k/zgSLYfl4MPQ/s1600/background-1-template-sd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+    overflow: hidden;
+    padding: 10px;
+    color: rgb(245, 229, 7)
+}
+
+
+.headerUl {
+    list-style-type: none;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: rgb(162, 168, 78);
+    }
+
+    #header__titulo--fuente {
+        margin-left: 450px;
+        margin-right: 450px;
+    }
+    
+    #header__subtitulo--fuente {
+        margin-right: 600px;
+        margin-left: 600px;
+    }
+
+    
+ .header__nav--formato {
+
+    padding: 10px;
+    margin: 10px;
+ }
+
+ .header__nav--formato a {
+     text-decoration: none;
+    //  margin: 40px;
+     color: #000;
+ }
+
+
+/* Articulos de Body */
+
+#grid--formato {
+    display: grid;
+    grid-template-columns: 10fr 100px;
+    grid-template-rows: 1fr 0fr 0fr ;
+
+    grid-template-areas:
+    "grid__fotos grid__publicidad"
+    "grid__videoNosotros grid__videoNosotros"
+    "grid__footer grid__footer"
+
+    }
+
+    #grid__fotos {
+            grid-area: grid__fotos;
+            padding-right: 20px;
+    }
+
+    #grid__publicidad {
+        grid-area: grid__publicidad;
+        text-align: center;
+        border: 1px solid black;
+        padding: 50px; 
+        background-image: linear-gradient(#eeae5b, orange);
+
+    }
+
+    #grid__videoNosotros {
+        grid-area: grid__videoNosotros;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 800px;
+
+    }
+
+    #grid__footer {
+        grid-area: grid__footer;
+
+    }
+
+    
+    #grid__footer li {
+        text-decoration: none;
+        margin: 30px;
+        padding-right: 120px;
+        padding-left: 120px;
+         }
+    
+
+/* Footer */
+
+.grid__footer__lista--formato {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(http://3.bp.blogspot.com/-BWxzdtVwawg/TywgA_9RW_I/AAAAAAAAC3k/zgSLYfl4MPQ/s1600/background-1-template-sd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+    overflow: hidden;
+    color: rgb(234, 250, 8);
+    width: 100%;
+}
+
+
+
+ #menu ul {
+     margin: 0px;
+     padding: 0px ;
+   
+    }
+
+ #menu li {
+         float: left;
+         list-style: none;
+         font-family: 'Staatliches', cursive;
+       
+     }
+
+
+
+
+
+
+
+
+
+
+
