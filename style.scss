@@ -1,31 +1,28 @@
+$bgcolor: rgb(248, 247, 240) ;
+@mixin size ($ancho, $alto) {
+    height: $alto;
+    width: $ancho;  
+}
 
-@import "contacto";
-@import "galeria";
-@import "productos";
-@import "quienes_somos";
-@import "registrate";
-$bgcolor: darkgoldenrod;
-$paddingForm: 30px;
-$sizeDescripcion: 10px;
 
-* {
+
+* { 
     margin: 0;
     padding: 0;
 }
 
-
 body {
     font-family: 'Staatliches', cursive;
-    background-color: grey
+    background-color: $bgcolor !important
 
 }
-
-
 
 li {
     list-style: none;
     text-decoration: none;
 }
+
+
 
 /* Header */
 
@@ -40,88 +37,78 @@ li {
     color: rgb(245, 229, 7)
 }
 
+ 
 
-.headerUl {
-    list-style-type: none;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    background-color: rgb(162, 168, 78);
-    }
-
-    #header__titulo--fuente {
-        margin-left: 450px;
-        margin-right: 450px;
+#header__titulo--fuente {
+        margin-left: 0px;
+        margin-right: 150px;
     }
     
-    #header__subtitulo--fuente {
-        margin-right: 600px;
-        margin-left: 600px;
+#header__subtitulo--fuente {
+        margin-right: 100px;
+        margin-left: 20px;
     }
 
+.header__nav--ubicacion li {
+        float: right;
     
- .header__nav--formato {
-
-    padding: 10px;
-    margin: 10px;
- }
-
- .header__nav--formato a {
-     text-decoration: none;
-    //  margin: 40px;
-     color: #000;
- }
-
-
+        
+    }
+.header__nav--estilo a {
+        display: flex;
+        text-decoration: none;
+        flex-direction: row;
+        float: right;
+        padding: 10px;
+        color: yellow;
+        font-size: 12px;
+    
+    }
+    
+    
 /* Articulos de Body */
 
 #grid--formato {
     display: grid;
-    grid-template-columns: 10fr 100px;
-    grid-template-rows: 1fr 0fr 0fr ;
+    grid-template-columns: 8fr 120px;
+    grid-template-rows: 1fr 0fr ;
 
     grid-template-areas:
     "grid__fotos grid__publicidad"
-    "grid__videoNosotros grid__videoNosotros"
     "grid__footer grid__footer"
 
     }
 
     #grid__fotos {
-            grid-area: grid__fotos;
-            padding-right: 20px;
-    }
+        grid-area: grid__fotos;
+        padding-right: 20px;
+        padding-top: 10px;
+}
 
-    #grid__publicidad {
-        grid-area: grid__publicidad;
-        text-align: center;
-        border: 1px solid black;
-        padding: 50px; 
-        background-image: linear-gradient(#eeae5b, orange);
+#grid__publicidad {
+    grid-area: grid__publicidad;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px; 
+    margin-top: 10px;
+    background-image: linear-gradient(#e2c39a, rgb(189, 161, 109));
 
-    }
+}
 
-    #grid__videoNosotros {
-        grid-area: grid__videoNosotros;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        height: 800px;
 
-    }
 
-    #grid__footer {
-        grid-area: grid__footer;
+#grid__footer {
+    grid-area: grid__footer;
 
-    }
+}
 
-    
-    #grid__footer li {
-        text-decoration: none;
-        margin: 30px;
-        padding-right: 120px;
-        padding-left: 120px;
-         }
-    
+
+#grid__footer li {
+    text-decoration: none;
+    margin: 30px;
+    padding-right: 120px;
+    padding-left: 120px;
+     }
 
 /* Footer */
 
@@ -138,22 +125,77 @@ li {
     overflow: hidden;
     color: rgb(234, 250, 8);
     width: 100%;
+    
+
 }
 
 
+#menu ul {
+    margin: 0px;
+    padding: 0px ;
+  
+   }
 
- #menu ul {
-     margin: 0px;
-     padding: 0px ;
-   
+#menu li {
+        float: left;
+        list-style: none;
+        font-family: 'Staatliches', cursive;
+      
     }
 
- #menu li {
-         float: left;
-         list-style: none;
-         font-family: 'Staatliches', cursive;
-       
-     }
+/* Productos */
+
+.productosUbicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+ 
+.imgProductos {
+    @include size(246px, 246px)
+}
+
+/* Contacto */
+
+.formulario {
+    background-color: $bgcolor;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+
+ /* Contacto */
+
+ .formulario {
+    background-color: $bgcolor;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+
+ /* Sobre nosotros*/
+
+ .videoNosotros  {
+    padding-top: 2rem;
+    padding-bottom: 2rem
+    ;
+}
+
+/* Registrate */
+
+.formRegistrate {
+    font-family: 'Roboto', sans-serif;
+    background-color: $bgcolor;
+    text-align: center;
+    font-size: 20;
+    padding: 10px;
+ }
+
+ 
+    
+    
+  
+
+  
 
 
 
@@ -161,7 +203,6 @@ li {
 
 
 
-
-
+    
 
 
