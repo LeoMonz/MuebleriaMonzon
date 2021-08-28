@@ -1,3 +1,10 @@
+
+@import "productos.scss";
+@import "sobreNosotros.scss";
+@import "registrate.scss";
+@import "contacto.scss";
+@import "bootstrap.scss";
+
 $bgcolor: rgb(248, 247, 240) ;
 @mixin size ($ancho, $alto) {
     height: $alto;
@@ -22,134 +29,32 @@ li {
     text-decoration: none;
 }
 
-
+.img--dimension {
+    height: max-content;
+}
 
 /* Header */
 
-.header--fondo {
-    background-image: url(http://3.bp.blogspot.com/-BWxzdtVwawg/TywgA_9RW_I/AAAAAAAAC3k/zgSLYfl4MPQ/s1600/background-1-template-sd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 5px;
-    overflow: hidden;
-    padding: 10px;
-    color: rgb(245, 229, 7)
-}
-
- 
-
-#header__titulo--fuente {
-        margin-left: 0px;
-        margin-right: 150px;
-    }
-    
-#header__subtitulo--fuente {
-        margin-right: 100px;
-        margin-left: 20px;
-    }
-
-.header__nav--ubicacion li {
-        float: right;
-    
-        
-    }
-.header__nav--estilo a {
-        display: flex;
-        text-decoration: none;
-        flex-direction: row;
-        float: right;
-        padding: 10px;
-        color: yellow;
-        font-size: 12px;
-    
-    }
-    
-    
-/* Articulos de Body */
-
-#grid--formato {
-    display: grid;
-    grid-template-columns: 8fr 120px;
-    grid-template-rows: 1fr 0fr ;
-
-    grid-template-areas:
-    "grid__fotos grid__publicidad"
-    "grid__footer grid__footer"
-
-    }
-
-    #grid__fotos {
-        grid-area: grid__fotos;
-        padding-right: 20px;
-        padding-top: 10px;
-}
-
-#grid__publicidad {
-    grid-area: grid__publicidad;
-    text-align: center;
-    border: 1px solid black;
-    padding: 0px; 
-    margin-top: 10px;
-    background-image: linear-gradient(#e2c39a, rgb(189, 161, 109));
-
+.tituloNav {
+    float: inline-end;
+    color: rgb(226, 226, 80);
+    padding-top: 10px;
 }
 
 
 
-#grid__footer {
-    grid-area: grid__footer;
-
-}
-
-
-#grid__footer li {
-    text-decoration: none;
-    margin: 30px;
-    padding-right: 120px;
-    padding-left: 120px;
-     }
-
-/* Footer */
-
-.grid__footer__lista--formato {
-    display: flex;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-between;
-    background-image: url(http://3.bp.blogspot.com/-BWxzdtVwawg/TywgA_9RW_I/AAAAAAAAC3k/zgSLYfl4MPQ/s1600/background-1-template-sd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 5px;
-    overflow: hidden;
-    color: rgb(234, 250, 8);
-    width: 100%;
-    
-
-}
-
-
-#menu ul {
-    margin: 0px;
-    padding: 0px ;
-  
-   }
-
-#menu li {
-        float: left;
-        list-style: none;
-        font-family: 'Staatliches', cursive;
-      
-    }
 
 /* Productos */
 
 .productosUbicacion {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 30px;
+    justify-content: space-evenly;
+}
+
+.cardProductos {
+    margin: 15px;
 }
  
 .imgProductos {
@@ -160,35 +65,39 @@ li {
 
 .formulario {
     background-color: $bgcolor;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
  }
 
- /* Contacto */
-
- .formulario {
-    background-color: $bgcolor;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
- }
 
  /* Sobre nosotros*/
 
- .videoNosotros  {
-    padding-top: 2rem;
-    padding-bottom: 2rem
-    ;
-}
+ .videoFabrica {
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+ }
+
+ .videoFabrica iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+
+ }
+
+ .containerVideo {
+     width: 60%;
+     margin: auto;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
 
 /* Registrate */
 
-.formRegistrate {
-    font-family: 'Roboto', sans-serif;
-    background-color: $bgcolor;
-    text-align: center;
-    font-size: 20;
-    padding: 10px;
- }
+.containerForm {
+    padding: 50px;
+}
 
  
     

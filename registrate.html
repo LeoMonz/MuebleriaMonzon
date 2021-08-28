@@ -4,113 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <title>WI Mueblería | Bienvenidos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom.css">
 </head>
-<body>
 
-    <header>
-        <div class="header--fondo">
-        <h1 id="header__titulo--fuente">WOOD INNOVATION</h1>
-        <h4 id="header__subtitulo--fuente">Mueblería artesanal</h4>
-        <nav>
-            <ul class="header__nav--ubicacion" >
-                <div class="header__nav--estilo">
-                <div><li><a href="registrate.html">Registrate</a></li></div>
-                <div><li><a href="contacto.html">Contacto</a></li></div>
-                <div><li><a href="productos.html">Productos</a></li></div>
-                <div><li><a href="quienes_somos.html">Sobre nosotros</a></li></div>
-                <div><li><a href="index.html">Home</a></li></div>
-                </div>
-            </ul>
-        </nav>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container containerNav px-4 px-lg-5">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <h6 class="tituloNav">Mueblería Artesanal</h6>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes_somos.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registrate.html">Registrate</a></li>
+                </ul>
+            
+            
+            </div>
         </div>
-
-
-
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="titulo">WOOD <br>INNOVATION</h1>
+                                    
+                </div>
+            </div>
+        </div>
     </header>
 
-    <form class="formRegistrate">
-    <fieldset>
-
-        <legend>Registrate</legend>
-
-        <br>
-
-
-    <label>Email</label>
-        <br>
-        <input type="text" name="mail_user" placeholder="Ingresa tu mail">
-        <br>
-        <br>
-    
-        <label>Contraseña</label>
-        <br>
-        <input type="password" name="pass_user" placeholder="Ingresa tu contraseña">
-        <br>
-        <br>
-
-        <label>Contraseña</label>
-        <br>
-        <input type="password" name="pass_user" placeholder="Confirmá tu contraseña">
-        <br>
-        <br>
-
-        <label>Nombre</label>
-        <br>
-        <input type="text" name="name_user" placeholder="Ingresa tu nombre">
-        <br>
-        <br>
-
-        <label>Apellido</label>
-        <br>
-        <input type="text" name="name_user" placeholder="Ingresa tu apellido">
-        <br>
-        <br>
-
-        <label>DNI</label>
-        <br>
-        <input type="text" name="Document" placeholder="Ingresa tu DNI sin puntos">
-        <br>  
-        <br> 
-                
-        <input type="checkbox" name="Propaganda" value="ofertas">
-        <label for="Propaganda">Deseo recibir ofertas por Mail</label><br>
-        <br>
-        <br>
-
-        <input type="submit" name="Enviar formulario">
-         <input type="reset" name="Borrar">
-                <br>
-
-
-            </fieldset>
+    <form class="containerForm">
+        <div class="mb-3 input-group">
+            <span class="input-group-text">Apellido y nombre</span>
+            <input type="text" aria-label="First name" class="form-control">
+            <input type="text" aria-label="Last name" class="form-control">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          <div id="emailHelp" class="form-text">Debe tener al menos 8 caracteres</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Deseo recibir ofertas por Email</label>
+        </div>
+        <div>
+        <button type="submit" class="btn btn-warning">Enviar</button>
+        <button type="reset" class="btn btn-warning">Borrar</button>
+        </div>
+        
+      </form>
 
 
 
-        </form>
-
-
-
-        <footer id="grid__footer">
-
-            <div>
-                <ul  class= "grid__footer__lista--formato">
-                        <li>Medios de contacto</li>
-                        <li>Medios de pago</li>
-                </ul>
-
-                
-            </div>
-        </footer>
-
+       
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy;. Todos los derechos reservados Wood Innovation. <br><br><br> 02477-433546 Ugales 86, Pergamino, Buenos aires.</div></footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     
 </body>
