@@ -1,106 +1,53 @@
-// Desafío Array con objetos + Primer entrega de proyecto final //
 
-
-class Producto {
-    constructor(nombre, madera, medidas, precio) {
-        this.nombre = nombre;
-        this.madera = madera;
-        this.medidas = medidas;
-        this.precio = parseFloat(precio);
-    }
-    ahora12() {
-        return this.precio / 12;
-    }
-    descuentoEfectivo() {
-        return this.precio * 0.90;
-    }
+   
+function Producto(nombre, madera, medidas, precio) {
+    this.nombre = nombre;
+    this.madera = madera;
+    this.medidas = medidas;
+    this.precio = precio;
     
-}
-
-const arrayProductos = [];
-arrayProductos.push(new Producto("Mesa Aqua", "Algarrobo", "180cms x 100cms x 70cms", 54000));
-arrayProductos.push(new Producto("Mesa Terra", "Pino", "210cms x 110cms x 70cms", 45000));
-arrayProductos.push(new Producto("Silla Bora", "Cedro", "60cms x 50cms x 70cms", 9000));
-arrayProductos.push(new Producto("Silla Bonet", "Algarrobo" , "60cms x 60cms x 70cms", 7500));
-
-console.log(arrayProductos)
-
-for (const producto of arrayProductos) {
-    console.log("Con la promoción AHORA12 el valor de la cuota sería de $" + producto.ahora12())
-}
-
-for (const producto of arrayProductos) {
-    console.log("Si el pago es en efectivo se le aplicará un 10% de descuento, quedando un precio final de $" + producto.descuentoEfectivo())
-}
-
-
-
+ }
+ const mesaAqua = new Producto("Mesa Aqua", "Algarrobo", "180cms x 100cms x 70cms", 40000);
+ const mesaTerra = new Producto("Mesa Terra", "Pino", "210cms x 110cms x 70cms", 45000);
+ const sillaBora = new Producto("Silla Bora", "Cedro", "60cms x 50cms x 70cms", 5000);
+ const sillaBonet = new Producto("Silla Bonet", "Algarrobo" , "60cms x 60cms x 70cms", 7500);
+ const arrayProductos = [mesaTerra,mesaAqua,sillaBonet,sillaBora]
  
 
-// Segunda opción Array con objetos //
+ const productoElegido = prompt ("Hola, en este momento tenemos stock en: \n- MESA\n- SILLA\n¿Que producto le interesa?")
+ const propiedades = ("el producto seleccionado cuenta con las siguientes características:")
+ const compra = ("para continuar con la compra por favor contactarse con el 2477-351607")
+ const gracias = ("Gracias por visitarnos, ¡vuelva pronto!")
 
+ if (productoElegido == "mesa") {
+     const modeloMesa = prompt ("contamos con dos modelos:\n- AQUA\n- TERRA\n¿Que modelo le interesa?")
+     if (modeloMesa == "aqua") {
+    console.log(propiedades)
+    console.log(mesaAqua)
+    console.log(compra)
+    }else if (modeloMesa == "terra"){
+    console.log(propiedades)
+    console.log(mesaTerra)
+    console.log(compra)
+    }else{
+        console.log(gracias)
+    }
 
-// function Producto(nombre, madera, medidas, precio) {
-//     this.nombre = nombre;
-//     this.madera = madera;
-//     this.medidas = medidas;
-//     this.precio = precio;
-    
-// }
-// const mesaAqua = new Producto("Mesa Aqua", "Algarrobo", "180cms x 100cms x 70cms", 40000);
-// const mesaTerra = new Producto("Mesa Terra", "Pino", "210cms x 110cms x 70cms", 45000);
-// const sillaBora = new Producto("Silla Bora", "Cedro", "60cms x 50cms x 70cms", 5000);
-// const sillaBonet = new Producto("Silla Bonet", "Algarrobo" , "60cms x 60cms x 70cms", 7500);
-
-
-// console.log(mesaAqua)
-// console.log(mesaTerra)
-// console.log(sillaBora)
-// console.log(sillaBonet)
-
-// const arrayProductos = [mesaTerra,mesaAqua,sillaBonet,sillaBora]
-// console.log(arrayProductos)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// /*Desafío entregable*/
-
-// const producto = prompt ("hola, por el momento solo tenemos sillas. ¿le interesa comprar el producto? ")
-// const saludo = "gracias por su compra"
-// const precioSilla = 5000
-// const multiplicacion = (a,b) => a * b;
-
-       
-
-
-//         if (producto !="no" ){
-
-//             const cantidad = prompt ("perfecto, ¿cuantas va a necesitar?")
-//             if (cantidad > 1){
-//                 alert("muy bien, usted deberá abonar" +" "+ multiplicacion(precioSilla,cantidad))
-//                 alert(saludo)
-//                 producto =""
-              
-//             } else {
-//                 alert("lo lamentamos, usted ingresó un valor incorrecto")
-//                 producto = ""
-//             }
-            
-//         }else {
-//             alert("lamentamos no poder ayudarlo.")
-
-//         }
-        
+}else if (productoElegido == "silla") {
+    const modeloSilla = prompt ("contamos con dos modelos:\n- BORA\n- BONET\n¿Que modelo le interesa?")
+    if (modeloSilla == "bora") {
+   console.log(propiedades)
+   console.log(sillaBora)
+   console.log(compra)
+   }else if (modeloSilla == "bonet"){
+   console.log(propiedades)
+   console.log(sillaBonet)
+   console.log(compra)
+   }else{
+       console.log(gracias)
+   }
+}else{
+    alert(gracias)
+}
 
 
